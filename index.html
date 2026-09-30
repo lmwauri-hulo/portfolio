@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laurent Mghulo Mwawuri | Paid Media Specialist</title>
+<meta name="description" content="Paid media specialist with 5 years of experience running Meta, Google and TikTok ads, plus social media management.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F7FB; --ink:#101828; --muted:#4B5565; --line:#D9DFEA;
+  --blue:#1B4FD8; --blue-dark:#0F2F87; --sun:#FFC94A; --white:#fff;
+  --head:'Bricolage Grotesque','Segoe UI',Arial,sans-serif;
+  --body:'Source Sans 3','Segoe UI',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);line-height:1.15;margin:0}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+
+/* nav */
+.nav{display:flex;justify-content:space-between;align-items:center;gap:1rem;max-width:1100px;margin:0 auto;padding:1.25rem 1.5rem}
+.logo{font:700 1.15rem var(--head);text-decoration:none}
+.nav nav{display:flex;align-items:center;gap:1.5rem}
+.nav nav a{text-decoration:none;font-weight:600;color:var(--muted)}
+.nav nav a:hover{color:var(--blue)}
+.nav-cta{color:var(--white)!important;background:var(--blue);padding:.45rem 1rem;border-radius:999px}
+.nav-cta:hover{background:var(--blue-dark)}
+
+main{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center;padding:3.5rem 0 4.5rem}
+.kicker{font-weight:600;color:var(--blue);margin:0 0 1rem}
+.hero h1{font-size:clamp(2.3rem,5vw,3.9rem);font-weight:800;letter-spacing:-.02em}
+.lead{font-size:1.2rem;color:var(--muted);max-width:34rem;margin:1.25rem 0 2rem}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:.8rem 1.4rem;border:2px solid var(--ink);border-radius:999px;transition:background .15s,color .15s}
+.btn:hover{background:var(--ink);color:var(--white)}
+.btn.primary{background:var(--blue);border-color:var(--blue);color:var(--white)}
+.btn.primary:hover{background:var(--blue-dark);border-color:var(--blue-dark)}
+
+/* funnel */
+.funnel{margin:0;display:flex;flex-direction:column;align-items:center;gap:.6rem}
+.bar{display:flex;flex-direction:column;justify-content:center;align-items:center;height:64px;border-radius:10px;color:var(--white);text-align:center}
+.bar span{font:700 1.1rem var(--head)}
+.bar small{font-size:.85rem;opacity:.9}
+.b1{width:100%;background:var(--blue-dark)}
+.b2{width:78%;background:var(--blue)}
+.b3{width:56%;background:#4C7BF0}
+.b4{width:36%;background:var(--sun);color:var(--ink)}
+.funnel figcaption{margin-top:.75rem;font-size:.95rem;color:var(--muted);text-align:center;max-width:20rem}
+
+/* blocks */
+.block{padding:3.5rem 0;border-top:1px solid var(--line)}
+.block h2{font-size:clamp(1.7rem,3vw,2.3rem);font-weight:700;margin-bottom:1.75rem}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:62rem}
+.two-col p{margin:0;max-width:34rem}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:1.5rem}
+.card h3{font-size:1.2rem;margin-bottom:.5rem}
+.card p{margin:0;color:var(--muted)}
+.work{border-left:6px solid var(--blue)}
+.work .tags{margin-top:1rem;font-size:.9rem;font-weight:600;color:var(--blue)}
+
+/* timeline */
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{display:grid;grid-template-columns:9rem 1fr;gap:1.5rem;padding:0 0 2.25rem}
+.timeline li:last-child{padding-bottom:0}
+.when{font:700 1.05rem var(--head);color:var(--blue)}
+.what h3{font-size:1.25rem;margin-bottom:.75rem}
+.what ul{margin:0;padding-left:1.2rem;color:var(--muted)}
+.what li{margin-bottom:.4rem;padding:0;display:list-item}
+
+/* skills */
+.skills{display:grid;grid-template-columns:9rem 1fr;gap:.9rem 1.5rem;margin:0;max-width:52rem}
+.skills dt{font-weight:600}
+.skills dd{margin:0;color:var(--muted)}
+
+/* contact */
+.contact{margin:2rem 0 4rem;padding:3rem 2rem;background:var(--blue-dark);color:var(--white);border-radius:20px;text-align:center}
+.contact h2{font-size:clamp(1.7rem,3.5vw,2.5rem);margin-bottom:.75rem}
+.contact p{margin:0 auto 1.75rem;max-width:32rem;opacity:.9}
+.contact .btn.primary{background:var(--sun);border-color:var(--sun);color:var(--ink)}
+.contact .btn.primary:hover{background:var(--white);border-color:var(--white)}
+.footer{text-align:center;padding:0 1.5rem 2.5rem;color:var(--muted);font-size:.95rem}
+
+/* responsive */
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;gap:2.5rem;padding-top:2rem}
+  .grid,.grid.two,.two-col{grid-template-columns:1fr}
+  .timeline li{grid-template-columns:1fr;gap:.5rem}
+  .skills{grid-template-columns:1fr;gap:.2rem}
+  .skills dd{margin-bottom:.8rem}
+}
+@media (max-width:560px){
+  .nav nav a:not(.nav-cta){display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="logo" href="#top">Laurent Mwawuri</a>
+  <nav aria-label="Main">
+    <a href="#services">Services</a>
+    <a href="#experience">Experience</a>
+    <a href="#work">Work</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="hero-text">
+    <p class="kicker">Paid media specialist, 5 years</p>
+    <h1>Ads that bring in customers. Social accounts that keep them.</h1>
+    <p class="lead">I plan, launch and optimize Meta, Google and TikTok campaigns for e-commerce, DTC and B2B clients, and I manage their social media so paid and organic work as one.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:lmwauri@gmail.com">Email me</a>
+      <a class="btn" href="#work">See my work</a>
+    </div>
+  </div>
+
+  <figure class="funnel" aria-label="Full-funnel campaign planning: reach, click, lead, sale">
+    <div class="bar b1"><span>Reach</span><small>Prospecting</small></div>
+    <div class="bar b2"><span>Click</span><small>Creative testing</small></div>
+    <div class="bar b3"><span>Lead</span><small>Landing pages, forms</small></div>
+    <div class="bar b4"><span>Sale</span><small>Retargeting</small></div>
+    <figcaption>How I plan every campaign: the whole funnel, not just the ad.</figcaption>
+  </figure>
+</section>
+
+<section id="about" class="block">
+  <h2>About</h2>
+  <div class="two-col">
+    <p>I'm a paid media specialist who works independently with clients on Upwork and Fiverr. I build the campaign, test the creative, track the results, and tell the client clearly what to do next.</p>
+    <p>I also handle social media management, from content planning to community engagement. I hold a Bachelor of ICT and Cyber Security from Kenya Methodist University, which helps me stay careful with tracking, accounts and platform policies.</p>
+  </div>
+</section>
+
+<section id="services" class="block">
+  <h2>What I do</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>Meta ads</h3>
+      <p>Account setup, audiences, creative testing, budgets, scaling and reporting on Facebook and Instagram.</p>
+    </article>
+    <article class="card">
+      <h3>Google ads</h3>
+      <p>Search campaigns and funnel rebuilds focused on lead quality and conversion rates.</p>
+    </article>
+    <article class="card">
+      <h3>TikTok ads</h3>
+      <p>UGC-style creative and short-form video campaigns for reach and retargeting.</p>
+    </article>
+    <article class="card">
+      <h3>Social media management</h3>
+      <p>Content calendars, posting, community engagement and performance tracking across Facebook, Instagram and TikTok.</p>
+    </article>
+    <article class="card">
+      <h3>Tracking and reporting</h3>
+      <p>Google Analytics, Meta Events Manager and platform dashboards that connect ad spend to leads and sales.</p>
+    </article>
+    <article class="card">
+      <h3>Landing pages and lead forms</h3>
+      <p>Clearer headlines, shorter forms and better conversion paths on the pages your ads point to.</p>
+    </article>
+  </div>
+</section>
+
+<section id="experience" class="block">
+  <h2>Experience</h2>
+  <ol class="timeline">
+    <li>
+      <div class="when">2024 – 2026</div>
+      <div class="what">
+        <h3>Paid Media &amp; Social Media Specialist, Upwork</h3>
+        <ul>
+          <li>Planned and managed paid campaigns on Meta and Google for e-commerce, DTC and B2B clients, working to CPL, CPA and ROAS targets.</li>
+          <li>Rebuilt funnels across Google Search and Meta to improve lead quality and conversion rates.</li>
+          <li>Managed client social media accounts, including content calendars, posting and community engagement.</li>
+          <li>Presented strategy and results through weekly reports and video calls.</li>
+          <li>Kept ad accounts healthy and compliant with Meta and Google policies.</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="when">2021 – 2023</div>
+      <div class="what">
+        <h3>Paid Media Specialist, Fiverr</h3>
+        <ul>
+          <li>Ran Meta and Google campaigns for several e-commerce and DTC brands at the same time.</li>
+          <li>Improved ROAS and reduced CPA through creative testing, audience expansion and funnel optimization.</li>
+          <li>Worked with designers and copywriters on hooks, formats and messaging to raise click-through rates.</li>
+          <li>Handled social media management for small business clients on Facebook and Instagram.</li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section id="work" class="block">
+  <h2>Selected work</h2>
+  <div class="grid two">
+    <article class="card work">
+      <h3>Lower acquisition costs</h3>
+      <p>Restructured campaign funnels across multiple accounts to bring customer acquisition costs down.</p>
+      <p class="tags">Meta · Google · Funnel strategy</p>
+    </article>
+    <article class="card work">
+      <h3>Revenue growth for e-commerce</h3>
+      <p>Grew revenue through steady creative testing and audience segmentation.</p>
+      <p class="tags">Meta · Creative testing</p>
+    </article>
+    <article class="card work">
+      <h3>Organic and paid together</h3>
+      <p>Grew engagement and followers on client social accounts by pairing organic content with paid promotion.</p>
+      <p class="tags">Social media · Paid promotion</p>
+    </article>
+    <article class="card work">
+      <h3>Evergreen retargeting</h3>
+      <p>Built retargeting campaigns using UGC-style content and product-focused creative.</p>
+      <p class="tags">Retargeting · UGC · TikTok</p>
+    </article>
+  </div>
+</section>
+
+<section id="skills" class="block">
+  <h2>Skills and tools</h2>
+  <dl class="skills">
+    <dt>Platforms</dt><dd>Meta Ads Manager, Google Ads, TikTok Ads</dd>
+    <dt>Analytics</dt><dd>Google Analytics, Meta Events Manager, Meta Business Suite</dd>
+    <dt>Social media</dt><dd>Content planning, scheduling, community management</dd>
+    <dt>Strengths</dt><dd>Audience segmentation, creative testing, full-funnel strategy, ROAS and CPA reporting, policy compliance</dd>
+  </dl>
+</section>
+
+<section id="education" class="block">
+  <h2>Education</h2>
+  <p><strong>Bachelor of ICT and Cyber Security</strong>, Kenya Methodist University</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Have a campaign to launch or fix?</h2>
+  <p>Tell me about your product, budget and goal, and I'll reply with how I'd approach it.</p>
+  <a class="btn primary" href="mailto:lmwauri@gmail.com">lmwauri@gmail.com</a>
+</section>
+
+</main>
+
+<footer class="footer">© <span id="yr">2026</span> Laurent Mghulo Mwawuri</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
